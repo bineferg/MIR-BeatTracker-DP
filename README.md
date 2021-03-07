@@ -40,4 +40,4 @@ $ make eval-all
 ```
 
 ## References
-[[1]](https://www.audiolabs-erlangen.de/resources/MIR/FMP/C6/C6S3_BeatTracking.html),[[2]](https://www.audiolabs-erlangen.de/resources/MIR/FMP/C6/C6S1_NoveltySpectral.html)[[3]](https://www.ee.columbia.edu/~dpwe/pubs/Ellis07-beattrack.pdf)
+[[1]](https://www.audiolabs-erlangen.de/resources/MIR/FMP/C6/C6S3_BeatTracking.html)[[2]](https://www.audiolabs-erlangen.de/resources/MIR/FMP/C6/C6S1_NoveltySpectral.html)[[3]](https://www.ee.columbia.edu/~dpwe/pubs/Ellis07-beattrack.pdf)
