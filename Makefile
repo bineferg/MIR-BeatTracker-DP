@@ -7,10 +7,17 @@ AUDIO_FILE ?= './BallroomData/ChaChaCha/Albums-I_Like_It2-01.wav'
 BEAT_ESTIMATE ?= "estimates.txt"
 BEAT_GROUND_TRUTH ?= "truth.txt"
 
-track-beat:
+track-beat: data-check beat-tracker
+
+data-check:
+	if [ ! -d ./BallroomData ] ; then curl http://mtg.upf.edu/ismir2004/contest/tempoContest/data1.tar.gz --output ./data1.tar.gz; tar -xf data1.tar.gz; fi 
+
+beat-tracker:
 	python3 -c "from beat_tracker import beatTracker;beatTracker($(AUDIO_FILE))"
 
-track-all:
+track-all: data-check beat-tracker-all
+	
+beat-tracker-all:
 	python3 run-all.py
 
 play:
